@@ -1,0 +1,109 @@
+<?php namespace ProcessWire;
+// K Hollings
+/**
+ * ProcessWire Google Recaptcha  Fieldtype
+ *
+ * Fieldtype for Google Recaptcha.
+ *
+ * by Paul Strandoo
+ * inspired by FieldtypeStarRating by Raymond Geerts
+ *
+ * ProcessWire 2.x
+ * Copyright (C) 2010 by Ryan Cramer
+ * Licensed under GNU/GPL v2, see LICENSE.TXT
+ *
+ * http://www.processwire.com
+ * http://www.ryancramer.com
+ *
+ */
+
+class InputfieldRecaptcha extends Inputfield {
+
+  public static function getModuleInfo() {
+    return array(
+      'title' => __('ReCaptcha', __FILE__),
+      'version' => 0.1,
+      'summary' => __('Adds a Google ReCaptcha as a field to any form. Requires MarkupGoogleRecaptcha module by Flydev.', __FILE__),
+      'author'   => 'Strandoo',
+      'requires' => 'MarkupGoogleRecaptcha',
+    );
+  }
+
+	/**
+	 * Init
+	 * 
+	 */
+	public function init() {
+		parent::init();
+		$this->attr('checked', ''); 
+		//$this->set('skipLabel', Inputfield::skipLabelFor); // tell InputfieldWrapper not to use a 'for' attribute with it's autogen'd <label>
+	}
+
+    //
+    // CSS and Scripts for form styling and display; not used here.
+    //
+    public function getScripts(){
+        $scripts = "<script src=\"https://www.google.com/recaptcha/api.js\"></script>";
+        return $scripts;
+    }
+
+
+	/**
+	 * Render checkbox input
+	 * 
+	 * @return string
+	 * 
+	 */
+	public function ___render() {
+		$label = '';
+		$user = $this->wire('user');
+		
+		$captcha = $this->modules->get("MarkupGoogleRecaptcha");
+		
+		$out = '';
+		$out .= $captcha->render();
+		//$out .= '<script src="https://www.google.com/recaptcha/api.js"></script>';
+		//$out .= '<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>';
+		//$out .= '<div class="g-recaptcha" data-sitekey="6LedpncUAAAAAO4LUhEttWgr1p_y6oH2vDJKZPQs"></div>';
+		//$out .= $this->getScripts();
+		$out .= "<script src=\"https://www.google.com/recaptcha/api.js\"></script>";
+		return $out;
+	}
+
+  protected function sanitizeValue($value) {
+    $value = trim($value);
+    if(!strlen("$value")) return '';
+    $negative = substr($value, 0, 1) === '-';
+    if($negative) $value = substr($value, 1);
+    if(!ctype_digit("$value")) $value = preg_replace('/[^\d,.]/', '', $value); // remove non digits, like commas, etc.
+    if(!strlen("$value")) return '';
+    if(strpos($value, '.') !== false || strpos($value, ',') !== false) $value = round($value);
+    $value = (int) $value;
+    if($negative) $value = -1 * $value;
+    return $value;
+  }
+
+  public function isEmpty() {
+    return strlen("{$this->value}") === 0;
+  }
+
+  public function setAttribute($key, $value) {
+    if($key == 'value') {
+      $value = $this->sanitizeValue($value);
+    }
+    return parent::setAttribute($key, $value);
+  }
+
+  public function set($key, $value) {
+    if($key == 'inputType') {
+      $this->attr('type', $value);
+    }
+    return parent::set($key, $value);
+  }
+
+  public function getConfigInputfields() {
+    $inputfields = parent::getConfigInputfields();
+    return $inputfields;
+  }
+
+}

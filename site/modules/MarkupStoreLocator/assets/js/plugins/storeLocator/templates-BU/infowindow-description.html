@@ -1,0 +1,35 @@
+{{#location}}
+<div class="info_content">
+<div>
+	{{#if url}}
+		<a href="{{url}}">
+			<img src="{{image}}" class="map-logo {{parent}}" alt="{{name}}" style="width: 80px;"> <strong>{{name}}</strong></a><br>
+		<a class="map-type-link" href="{{url}}">{{category}}</a>
+	{{else}}
+		<img src="{{image}}" class="map-logo {{parent}}" alt="{{name}}" style="width: 80px;"> <strong>{{name}}</strong><br>
+		<span class="map-type-link">{{category}}</span>
+	{{/if}}	
+	{{#if date}}
+		<div>{{date}}</div>
+	{{/if}}
+	{{#if value}}
+		<div>{{value}}</div>
+	{{/if}}
+	
+	<div>{{city}}{{#if city}},{{/if}} {{state}} {{postal}}</div>
+	{{#if hours1}}
+		<div>{{hours1}}</div>
+	{{/if}}
+	{{#if hours2}}
+		<div>{{hours2}}</div>
+	{{/if}}
+	{{#if hours3}}
+		<div>{{hours3}}</div>
+	{{/if}}
+	{{#if phone}}
+		<div>{{phone}}</div>
+	{{/if}}
+	<div><a href="{{url}}" target="_blank">{{niceURL web}}</a></div>
+</div>
+</div>
+{{/location}}

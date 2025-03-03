@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<markers>
+<marker name='Bridge Academy, Hackney, London' lat='51.535484' lng='-0.071586' category='Education' client='Bridge Academy' date='2013' />
+<marker name='Queen Mary University Maths Block Entrance' lat='51.523808' lng='-0.040559' category='Education' client='' date='2010' />
+<marker name='Queen Mary University Maths Block Lecture Theatre' lat='51.523808' lng='-0.040559' category='Education' client='Queen Mary University London' date='2011' />
+<marker name='Queen Mary University Library' lat='51.524067' lng='-0.040374' category='Education' client='Queen Mary University London' date='2010' />
+<marker name='Singlegate Primary School, Wimbledon' lat='51.417439' lng='-0.176028' category='Education' client='London Borough of Merton' date='2016' />
+<marker name='KCL Shepherds House, Guy&#039;s Hospital' lat='51.503746' lng='-0.088367' category='Healthcare' client='' date='2012' />
+<marker name='UCLH Queen Square Campus' lat='51.530125' lng='-0.115033' category='Healthcare' client='' date='2011' />
+<marker name='Avonmore Road, Kensington, London' lat='51.493633' lng='-0.204351' category='Commercial' client='' date='2014' />
+<marker name='Bedford Square, London WC1' lat='51.519470' lng='-0.130498' category='Commercial' client='Bedford Estates London Estates LLP' date='2015' />
+<marker name='Berners Street, London W1' lat='51.518192' lng='-0.137605' category='Commercial' client='Berners-Allsopp Estate' date='2018' />
+<marker name='Bondway' lat='51.484474' lng='-0.124549' category='Commercial' client='' date='2014' />
+<marker name='Covent Garden, London' lat='51.511997' lng='-0.122765' category='Commercial' client='' date='2012' />
+<marker name='Exmouth House, Clerkenwell, London' lat='51.525356' lng='-0.110122' category='Commercial' client='' date='2013' />
+<marker name='Great Guildford Business Square, Southwark' lat='51.504581' lng='-0.097063' category='Commercial' client='' date='2014' />
+<marker name='Howard Hotel, Central London' lat='51.511211' lng='-0.114378' category='Commercial' client='' date='2012' />
+<marker name='Hub Youth Centre, Hackney' lat='51.544071' lng='-0.075041' category='Commercial' client='London Borough of Hackn' date='2013' />
+<marker name='146-162 Kilburn High Road, London' lat='51.541142' lng='-0.195718' category='Commercial' client='' date='2011' />
+<marker name='Marylebone Centre, Westminster, London' lat='51.521347' lng='-0.159986' category='Commercial' client='' date='2014' />
+<marker name='Piccadilly Circus, London' lat='51.509968' lng='-0.134971' category='Commercial' client='' date='2011' />
+<marker name='Prince of Wales Yard, Royal Hospital, Chelsea' lat='51.486820' lng='-0.160268' category='Commercial' client='Royal Hospital Chelsea' date='2016' />
+<marker name='Spitfire Building, Kings Cross, London' lat='51.532066' lng='-0.118866' category='Commercial' client='Private' date='2015' />
+<marker name='Tabernacle Street, Shoreditch, London' lat='51.522396' lng='-0.086459' category='Commercial' client='Durley Investment Corporation' date='2013' />
+<marker name='Westminster Bridge Road, London' lat='51.498344' lng='-0.106909' category='Commercial' client='' date='2012' />
+<marker name='Whitmore Road, Haggerston' lat='51.536713' lng='-0.081754' category='Commercial' client='Private client' date='2012' />
+<marker name='Bruton Place, Mayfair, London' lat='51.511257' lng='-0.144614' category='Housing' client='' date='2013' />
+<marker name='Castlereagh Street, Marylebone, London' lat='51.516972' lng='-0.163568' category='Housing' client='' date='2015' />
+<marker name='Chesterfield Hill, Mayfair, London' lat='51.508781' lng='-0.149096' category='Housing' client='' date='2017' />
+<marker name='Clapham Park J3, London' lat='51.448105' lng='-0.129182' category='Housing' client='' date='2017' />
+<marker name='Cole Street, London' lat='51.499489' lng='-0.092985' category='Housing' client='' date='2012' />
+<marker name='Hays Mews, Mayfair, London' lat='51.508270' lng='-0.148142' category='Housing' client='' date='2017' />
+<marker name='Ivydale Road, Nunhead, London' lat='51.463264' lng='-0.048470' category='Housing' client='' date='2014' />
+<marker name='Hopkinson House, Pimlico, London' lat='51.491283' lng='-0.134681' category='Housing' client='' date='2013' />
+<marker name='Marcon Place, Hackney, London' lat='51.548218' lng='-0.059972' category='Housing' client='Genesis Housing Association' date='2015' />
+<marker name='Mayfair Refurbishments, London' lat='51.508270' lng='-0.148142' category='Housing' client='' date='2017' />
+<marker name='Monarch Court, London E9' lat='51.543522' lng='-0.030626' category='Housing' client='City YMCA' date='2015' />
+<marker name='Parkside: Armagh Road, London E3' lat='51.535652' lng='-0.029771' category='Housing' client='' date='2015' />
+<marker name='Parkside: Hitchin Square, London E3' lat='51.532349' lng='-0.034922' category='Housing' client='Circle Housing Group' date='2015' />
+<marker name='Swan Street, Southwark, London' lat='51.499386' lng='-0.094375' category='Housing' client='' date='2012' />
+<marker name='Usher Road, Poplar, London' lat='51.533813' lng='-0.027565' category='Housing' client='Old Ford Housing Association' date='2014' />
+</markers>
