@@ -214,7 +214,6 @@
 			$zoom = $page->office_location->zoom ? $page->office_location->zoom : '12';
 		?>
 	
-		<!-- <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyB66KywlSKy7OmfD02lfJfWm-CDaGs6NA0"></script> -->
 		<script>
 			var map;
 			var contentString = '<div id="balloon" class="info-window">'+

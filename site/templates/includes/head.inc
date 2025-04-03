@@ -288,8 +288,9 @@ include("includes/functions.php");
 
 <?php if($page->template=='home' || $page->template=='office-location' || $page->template=='location-page' || $page->template == 'contact-page') { ?>
 
-		<script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyB66KywlSKy7OmfD02lfJfWm-CDaGs6NA0'></script>
-
+	<?php if($site->google_map_api_key !=''): ?>
+		<script src='https://maps.googleapis.com/maps/api/js?key=<?php echo $site->google_map_api_key; ?>'></script>
+	<?php endif; ?>
 <?php } ?>
 
 <?php if($site->google_tag_manager !='') { ?>

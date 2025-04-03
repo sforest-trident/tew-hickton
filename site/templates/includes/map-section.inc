@@ -5,5 +5,3 @@
     </div>
 </section>
 <!-- / Section: Map -->
-
-<?php // <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyB66KywlSKy7OmfD02lfJfWm-CDaGs6NA0'></script> ?>
