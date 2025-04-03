@@ -1,0 +1,137 @@
+section.what-if-faq-block{
+    padding: unset !important;
+}
+
+.what-if-faq-block .inner{
+    display: flex;
+    flex-direction: column;
+}
+
+.wi_faq--wrapper{
+    display: flex;
+    flex-direction: column;  
+    padding-bottom: 1em;
+}
+
+.wi_faq--heading{
+    background-color: var(--e-color-accent);
+    color: #fff;
+    padding: 0.5rem 0.5rem;
+    border-radius: 0.5rem;
+    margin: unset;
+    cursor: pointer;
+    position: relative;
+    padding-right: 2rem;
+    font-size: 1rem;
+}
+
+.wi_faq--heading:after{
+    content: '';
+    display: block;
+    position: absolute;
+    height: 0px;
+    width: 0px;
+    border-right: solid 8px transparent;
+    border-left: solid 8px transparent;
+    border-top: solid 12px white;
+
+    right: 0.75rem;
+    top: 0.85rem;
+}
+
+
+
+.wi_faq--wrapper.col{
+    flex: 1 1 auto;
+}
+.wi_faq--body{
+    padding: unset;
+    margin-bottom: unset;
+}
+.wi_faq--body .inner{
+    padding: 1rem 0.5rem 0;
+}
+
+.wi_faq--content-wrapper ul{
+    margin-bottom: 1rem;
+}
+
+.wi_faq--content-wrapper li{
+    position: relative;
+    padding-left: 18px;
+}
+
+.wi_faq--content-wrapper li:before{
+    content: '';
+    background-color: var(--e-color-accent);
+    width: 7px;
+    height: 7px;
+    border-radius: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0.65rem;
+}
+
+.wi_faq--content-wrapper li > strong{
+    color: var(--e-color-accent);
+}
+
+
+.wi_faq--wrapper li b{
+    color: var(--e-color-accent);
+}
+
+.wi_faq--content-wrapper a {
+	text-decoration: none;
+	border-bottom: 1px solid #df7086;
+	box-shadow: inset 0 0 0 #df7086; /* 0 -1px 0 #... */
+	color: inherit;
+	transition: background-color 0.1s cubic-bezier(.33,.66,.66,1);
+	white-space: nowrap;
+
+    :hover{
+        background-color: #df7086;
+        background: rgba(223,112,134,0.3);
+        color: #000;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .what-if-faq-block .inner{
+        gap: unset;
+    }
+    
+    .wi_faq--wrapper{
+        flex-direction: row;
+        padding: unset;
+        margin-bottom: 1rem;
+    }
+
+    .wi_faq--content-wrapper{
+        width: 100%;
+    }
+    
+}   
+
+
+
+
+.accordion {
+    text-align: left;
+  }
+  
+  input[type="radio"] {
+    appearance: none;
+    position: fixed;
+    top: -100vh; left: -100vh;
+  
+    & ~ div {
+      max-height: 0;
+      overflow: hidden;
+    }
+  
+    &:checked ~ div {
+      max-height: 100%;
+    }
+  }

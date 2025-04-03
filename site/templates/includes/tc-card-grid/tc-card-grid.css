@@ -1,0 +1,115 @@
+.tc-card-grid {
+    /*Box Sizing*/
+    --tc-card-grid-card-max-width: 100%;
+
+    /*Margins and Padding*/
+    --tc-card-grid-margin: var(--section-gap) 0;
+    --tc-card-grid-padding: 0 var(--page-margin);
+    --tc-card-grid-card-padding: 1rem;
+
+    /*Border and Background*/
+    --tc-card-grid-card-border: 1px solid rgb(var(--clr-text-dark));
+    --tc-card-grid-card-border-radius: 6px;
+}
+
+.tc-card-grid {
+    margin: var(--tc-card-grid-margin);
+    padding: var(--tc-card-grid-padding);
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+    justify-items: center;
+}
+.tc-card-grid-main-container {
+    padding: 0 5vw;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 3vw;
+    row-gap: 2rem;
+    justify-content: center;
+}
+.tc-card-grid-card {
+    border: var(--tc-card-grid-card-border);
+    border-radius: var(--tc-card-grid-card-border-radius);
+    max-width: var(--tc-card-grid-card-max-width);
+    padding: var(--tc-card-grid-card-padding);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+}
+
+
+
+.tc-card-grid-main-container article {
+    min-width: 290px;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    padding: 1rem;
+    background-color: #fff;
+    transition: box-shadow 0.5s ease;
+}
+.tc-card-grid-main-container article:hover {
+    box-shadow: 5px 5px 8px 6px #0000001b;
+}
+.tc-card-grid-main-container article > hr:first-of-type {
+    position: relative;
+    max-width: 900px;
+    height: 40px;
+    background: url(../../images/rose-dingbat.png) 50% 50% no-repeat;
+    background-size: 40px;
+    overflow: hidden;
+    border: none;
+}
+.tc-card-grid-main-container article > hr {
+    background-color: lightgray;
+    width: 100%;
+    height: 1px;
+}
+.tc-card-grid-main-container article ul > li {
+    margin-left: 0.7rem;
+    margin-bottom: 0.8rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+.tc-card-grid-main-container article ul:first-of-type>li {
+ list-style-type: "\2713";
+ padding-inline-start: 1ch;
+}
+.tc-card-grid-main-container article ul:first-of-type>li::marker {
+    color: green;
+}
+.tc-card-grid-main-container article ul:nth-of-type(2)>li {
+    list-style-type: "X";
+    padding-inline-start: 1ch;
+}
+.tc-card-grid-main-container article ul:nth-of-type(2)>li::marker {
+    color: red;
+}
+
+.tc-card-grid-main-container article:nth-of-type(5) {
+    grid-column: span 1;
+    padding: 1rem 2rem;
+}
+
+@media only screen and (min-width: 768px) {
+    .tc-card-grid-main-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .tc-card-grid-main-container article:nth-of-type(5) {
+        grid-column: span 2;
+    }
+    .tc-card-grid-main-container article:nth-of-type(5) > ul {
+        columns: 2;
+    }
+}
+@media only screen and (min-width: 1490px) {
+    .tc-card-grid-main-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .tc-card-grid-main-container article:nth-of-type(5) {
+        grid-column: span 4;
+    }
+}

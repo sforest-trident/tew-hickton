@@ -355,7 +355,6 @@ class SimpleContactForm extends WireData implements Module {
 
         case 'redirectPage':
           $this->redirectPage = $value;
-          break;
 
         // === names
         case 'submitName':

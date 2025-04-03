@@ -1,0 +1,10 @@
+/**
+ * Because IE is STILL a back of broken buttholes.
+ *
+ */
+
+.page-wrapper {
+	background-color: #fff;
+	background-image: none !important;
+	background-attachment: scroll !important;
+	}

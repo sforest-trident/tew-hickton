@@ -1,1 +1,14 @@
-site/config.php
+/wire/
+/site/assets/
+/site/config.php
+/site/assets/files/ 
+/site/assets/cache/
+/site/assets/logs/
+node_modules/
+*.sql
+
+/docker
+.htaccess
+composer.json
+CONTRIBUTING.md
+htaccess.txt

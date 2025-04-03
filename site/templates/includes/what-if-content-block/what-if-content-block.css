@@ -1,0 +1,123 @@
+section.what-if-content-block{
+    padding: unset;
+}
+
+.what-if-content-block .inner{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.wi_cb--wrapper{
+    display: flex;
+    flex-direction: column;  
+    padding-bottom: 2em;
+}
+
+.wi_cb--wrapper:last-of-type{
+    padding-bottom: 1em;
+}
+
+
+
+.wi_cb--wrapper.col{
+    flex: 1 1 auto;
+}
+
+.wi_cb--content-wrapper ul{
+    margin-bottom: 1rem;
+    list-style: none;
+}
+
+.wi_cb--content-wrapper li{
+    position: relative;
+    padding-left: 18px;
+}
+
+.wi_cb--content-wrapper li:before{
+    content: '';
+    background-color: var(--e-color-accent);
+    width: 7px;
+    height: 7px;
+    border-radius: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0.65rem;
+}
+
+.wi_cb--wrapper li b,
+.wi_cb--wrapper li strong{
+    color: var(--e-color-accent);
+}
+
+.wi_cb--wrapper a {
+	text-decoration: none;
+	border-bottom: 1px solid #df7086;
+	box-shadow: inset 0 0 0 #df7086; /* 0 -1px 0 #... */
+	color: inherit;
+	transition: background 0.1s cubic-bezier(.33,.66,.66,1);
+	white-space: nowrap;
+}
+
+.wi_cb--wrapper a:hover {
+	background: #df7086;
+	background: rgba(223,112,134,0.3);
+	color: #000;
+}
+
+.wi_cb--img-block-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.wi_cb--img-block-wrapper img{
+    object-fit: cover;
+    height: 300px;
+    object-position: top;
+    width: 100%;
+}
+
+.wi_cb--img-block-wrapper.image-grid{
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.wi_cb--img-block-wrapper.image-grid img{
+    max-height: 300px;
+}
+
+
+@media only screen and (min-width: 1280px) {
+    .what-if-content-block .inner{
+        gap: unset;
+    }
+    
+    .wi_cb--wrapper{
+        flex-direction: row;
+        gap: 4rem; 
+        padding-bottom: 4em;
+    }
+
+    .wi_cb--content-wrapper{
+        max-width: 55%;
+    }
+    .wi_cb--img-block-wrapper{
+        width: 100%;
+        max-width: 300px;
+        padding-bottom: 2rem;
+    }
+
+    .wi_cb--img-block-wrapper img{
+        width: unset;
+        height: unset;
+        width: 100%;
+
+    }
+
+    .wi_cb--img-block-wrapper.image-grid img{
+        max-height: 230px;
+        width: 100%;
+    }
+}   
